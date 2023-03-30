@@ -1,6 +1,8 @@
 import 'package:crop_care/DiseaseDetection.dart';
 import 'package:crop_care/HarvestingHome.dart';
+import 'package:crop_care/LoginPage.dart';
 import 'package:crop_care/PestDetection.dart';
+import 'package:crop_care/RegisterPage.dart';
 import 'package:crop_care/cropCareHome.dart';
 import 'package:crop_care/cropPredictionResult.dart';
 import 'package:crop_care/cropRecomendation.dart';
@@ -187,7 +189,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         color: Colors.black,
                         decoration: TextDecoration.underline),
                   )),
-                  TextButton(
+              TextButton(
                   onPressed: () {
                     Navigator.push(
                         context,
@@ -196,6 +198,30 @@ class _MyHomePageState extends State<MyHomePage> {
                   },
                   child: Text(
                     "Pest Detection",
+                    style: TextStyle(
+                        color: Colors.black,
+                        decoration: TextDecoration.underline),
+                  )),
+              TextButton(
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => LgoinPage()));
+                  },
+                  child: Text(
+                    "Login Page",
+                    style: TextStyle(
+                        color: Colors.black,
+                        decoration: TextDecoration.underline),
+                  )),
+              TextButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => REgisterPage()));
+                  },
+                  child: Text(
+                    "Register Page",
                     style: TextStyle(
                         color: Colors.black,
                         decoration: TextDecoration.underline),
