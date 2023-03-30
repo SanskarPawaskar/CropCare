@@ -1,6 +1,10 @@
+import 'package:crop_care/DiseaseDetection.dart';
+import 'package:crop_care/HarvestingHome.dart';
+import 'package:crop_care/PestDetection.dart';
 import 'package:crop_care/cropCareHome.dart';
 import 'package:crop_care/cropPredictionResult.dart';
 import 'package:crop_care/cropRecomendation.dart';
+import 'package:crop_care/fertilizerRecomendation.dart';
 import 'package:crop_care/postHarvestingResult.dart';
 import 'package:crop_care/preHarvesting.dart';
 import 'package:flutter/material.dart';
@@ -131,7 +135,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         color: Colors.black,
                         decoration: TextDecoration.underline),
                   )),
-                  TextButton(
+              TextButton(
                   onPressed: () {
                     Navigator.push(
                         context,
@@ -144,7 +148,58 @@ class _MyHomePageState extends State<MyHomePage> {
                         color: Colors.black,
                         decoration: TextDecoration.underline),
                   )),
-
+              TextButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => FertilizerRecomendation()));
+                  },
+                  child: Text(
+                    "Fertilizer Recomendation",
+                    style: TextStyle(
+                        color: Colors.black,
+                        decoration: TextDecoration.underline),
+                  )),
+              TextButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => HarvestingHome()));
+                  },
+                  child: Text(
+                    "Harvesting Home",
+                    style: TextStyle(
+                        color: Colors.black,
+                        decoration: TextDecoration.underline),
+                  )),
+              TextButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => DiseaseDetection()));
+                  },
+                  child: Text(
+                    "Disease Detection",
+                    style: TextStyle(
+                        color: Colors.black,
+                        decoration: TextDecoration.underline),
+                  )),
+                  TextButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PestDetecetion()));
+                  },
+                  child: Text(
+                    "Pest Detection",
+                    style: TextStyle(
+                        color: Colors.black,
+                        decoration: TextDecoration.underline),
+                  )),
             ]),
           ),
         ),

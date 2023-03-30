@@ -140,7 +140,7 @@ class _CropRecomendationState extends State<CropRecomendation> {
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(15))),
                             child: Text(
-                              "Login",
+                              "Predict",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontFamily: "Quicksand",
@@ -150,6 +150,27 @@ class _CropRecomendationState extends State<CropRecomendation> {
                       ),
                     ],
                   )),
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image.asset('assets/bottom_logo.png'),
+                SizedBox(width: 15),
+                Text("Krishivalah",
+                    style: TextStyle(
+                      height: 1,
+                      fontFamily: 'Quicksand',
+                      fontWeight: FontWeight.w400,
+                      fontSize: 40,
+                      color: Color(0xff004B20),
+                    ))
+              ],
+            ),
+            SizedBox(
+              height: 20,
             ),
           ],
         ),
