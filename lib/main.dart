@@ -1,6 +1,8 @@
 import 'package:crop_care/cropCareHome.dart';
 import 'package:crop_care/cropPredictionResult.dart';
+import 'package:crop_care/cropRecomendation.dart';
 import 'package:crop_care/postHarvestingResult.dart';
+import 'package:crop_care/preHarvesting.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -115,7 +117,34 @@ class _MyHomePageState extends State<MyHomePage> {
                     style: TextStyle(
                         color: Colors.black,
                         decoration: TextDecoration.underline),
-                  ))
+                  )),
+              TextButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => Preharvesting()));
+                  },
+                  child: Text(
+                    "Pre-Harvesting ",
+                    style: TextStyle(
+                        color: Colors.black,
+                        decoration: TextDecoration.underline),
+                  )),
+                  TextButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => CropRecomendation()));
+                  },
+                  child: Text(
+                    "Crop Recomendation",
+                    style: TextStyle(
+                        color: Colors.black,
+                        decoration: TextDecoration.underline),
+                  )),
+
             ]),
           ),
         ),
